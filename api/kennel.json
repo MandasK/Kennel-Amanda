@@ -1,0 +1,63 @@
+{
+  "animals": [
+    {
+      "id": 2,
+      "name": "Oscar",
+      "breed": "Dachshund",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Pbn7TNDhN4P3KHt5tdXZHgHaGT%26pid%3DApi&f=1"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North"
+    },
+    {
+      "id": 2,
+      "name": "East Nashville"
+    },
+    {
+      "id": 3,
+      "name": "South Nashville"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Meredith Morgan"
+    },
+    {
+      "id": 2,
+      "name": "Jason King"
+    },
+    {
+      "id": 3,
+      "name": "Landon Morgan"
+    },
+    {
+      "id": 4,
+      "name": "Tyler Hilliard"
+    },
+    {
+      "id": 5,
+      "name": "Brandon Wheatley"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "number": "(615)423-6589",
+      "name": "Amanda King"
+    },
+    {
+      "id": 2,
+      "number": "(615)423-6590",
+      "name": "Brenda Long"
+    },
+    {
+      "id": 3,
+      "number": "(615)423-6591",
+      "name": "Rose Wisotzky"
+    }
+  ]
+}
