@@ -12,10 +12,12 @@ import LocationForm from "./location/LocationForm";
 import EmployeeForm from "./employee/EmployeeForm"
 import OwnerForm from "./owner/OwnerForm";
 import Login from "./auth/Login";
-import AnimalEditForm from "./animal/AnimalEditForm"
-import LocationEditForm from "./location/LocationEditForm"
-import EmployeeEditForm from "./employee/EmployeeEditForm"
-import OwnerEditForm from "./owner/OwnerEditForm"
+import AnimalEditForm from "./animal/AnimalEditForm";
+import LocationEditForm from "./location/LocationEditForm";
+import EmployeeEditForm from "./employee/EmployeeEditForm";
+import OwnerEditForm from "./owner/OwnerEditForm";
+import EmployeeWithAnimals from "./employee/EmployeeWithAnimals.js";
+
 
 const isAuthenticated = () => sessionStorage.getItem("credentials") !== null || localStorage.getItem("credentials") !== null;
 
@@ -99,6 +101,9 @@ const ApplicationViews = () => {
               return <Redirect to="/login" />
              }
             }} />
+            {/* <Route path="/locations/:locationId(\d+)/details" render={(props) => {
+            return <LocationDetail {...props} />
+            }} /> */}
             <Route
             exact path="/employees" render={(props) => {
             if (isAuthenticated()) {
@@ -120,6 +125,9 @@ const ApplicationViews = () => {
              } else {
               return <Redirect to="/login" />
              }
+            }} />
+            <Route path="/employees/:employeeId(\d+)/details" render={(props) => {
+            return <EmployeeWithAnimals {...props} />
             }} />
             <Route
             exact path="/owners"

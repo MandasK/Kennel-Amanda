@@ -4,25 +4,29 @@
       "id": 2,
       "name": "Oscar",
       "breed": "Dachshund",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Pbn7TNDhN4P3KHt5tdXZHgHaGT%26pid%3DApi&f=1"
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Pbn7TNDhN4P3KHt5tdXZHgHaGT%26pid%3DApi&f=1",
+      "employeeId": 3
     },
     {
       "id": 3,
       "name": "meyer",
       "breed": "Dachshund",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.sgrbADqr_nPVCub9jXxE_gAAAA%26pid%3DApi&f=1"
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.sgrbADqr_nPVCub9jXxE_gAAAA%26pid%3DApi&f=1",
+      "employeeId": 2
     },
     {
       "id": 4,
       "name": "Weiner",
       "breed": "Dachshund",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.q1jrXrsiS1OJvar5fsQ8cwHaFj%26pid%3DApi&f=1"
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.q1jrXrsiS1OJvar5fsQ8cwHaFj%26pid%3DApi&f=1",
+      "employeeId": 1
     },
     {
       "name": "Prince George",
       "breed": "Corgi",
       "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.sO42J8_0pKkoVedQLjTgjgHaHa%26pid%3DApi&f=1",
-      "id": 5
+      "id": 5,
+      "employeeId": 4
     }
   ],
   "locations": [
@@ -48,27 +52,33 @@
   "employees": [
     {
       "id": 1,
-      "name": "Meredith Morgan"
+      "name": "Meredith Morgan",
+      "locationId": 2
     },
     {
       "id": 2,
-      "name": "Jason King"
+      "name": "Jason King",
+      "locationId": 2
     },
     {
       "id": 3,
-      "name": "Landon Morgan"
+      "name": "Landon Morgan",
+      "locationId": 3
     },
     {
       "id": 4,
-      "name": "Tyler Hilliard"
+      "name": "Tyler Hilliard",
+      "locationId": 3
     },
     {
       "id": 5,
-      "name": "Brandon Wheatley"
+      "name": "Brandon Wheatley",
+      "locationId": 4
     },
     {
       "name": "John Hamm",
-      "id": 6
+      "id": 6,
+      "locationI": 4
     }
   ],
   "owners": [
