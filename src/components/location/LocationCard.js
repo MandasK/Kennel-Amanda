@@ -9,12 +9,16 @@ const LocationCard = props => {
                 <h3>Location: 
                 </h3>
                 <h4><span className="card-locationName">
-                    {props.location.name}
+                    {props.locations.name}
                     </span></h4>
-                    <Link to={(`/locations/${props.location.id}`)}>
+                    <Link to={(`/locations/${props.locations.id}`)}>
                         <button>Details</button>
                     </Link>
-                    <button type="button" onClick={() => props.deleteLocation(props.location.id)}>Close Location</button>
+                    <button type="button"
+                    onClick={() => props.history.push(`/locations/${props.locations.id}/edit`)}>
+                     Edit
+                    </button>
+                    <button type="button" onClick={() => props.deleteLocation(props.locations.id)}>Close Location</button>
             </div>
         </div>
     )

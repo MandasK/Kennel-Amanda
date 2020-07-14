@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Redirect } from "react-router-dom";
 import AnimalManager from '../../modules/AnimalManager';
 import './AnimalDetail.css'
 
@@ -24,7 +25,7 @@ const AnimalDetail = props => {
       props.history.push("/animals")
     );
   };
-
+    if (animal.name !== undefined) {
   return (
     <div className="card">
       <div className="card-content">
@@ -39,6 +40,9 @@ const AnimalDetail = props => {
       </div>
     </div>
   );
+    } else {
+      return <Redirect to="/" /> 
+    }
 }
 
 export default AnimalDetail;

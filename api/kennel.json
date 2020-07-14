@@ -37,18 +37,12 @@
       "name": "South Nashville",
       "address": "300 Plus Park, Nashville, TN 37211",
       "number": "(615)423-6591"
-    },
-    {
-      "name": "West Nashville",
-      "address": "1500 Charlotte Pk, Nashville, TN 37209",
-      "number": "615-423-6789",
-      "id": 4
     }
   ],
   "employees": [
     {
       "id": 1,
-      "name": "Meredith Morgan"
+      "name": "West Nashville"
     },
     {
       "id": 2,
@@ -74,8 +68,8 @@
   "owners": [
     {
       "id": 1,
-      "number": "(615)423-6589",
-      "name": "Amanda King"
+      "name": "Amanda King",
+      "number": "(615)423-6589"
     },
     {
       "id": 2,
