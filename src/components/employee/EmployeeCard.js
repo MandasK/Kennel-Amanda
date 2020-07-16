@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Employee.css";
+import AnimalManager from '../../modules/AnimalManager';
+
 
 const EmployeeCard = props => {
+    const [animals, setAnimals] = useState([]);
+    useEffect(() => {
+        AnimalManager.getAnimalEmployee(props.employee.id)
+        .then((response) => {
+
+            setAnimals(response)
+        
+            
+        }) 
+        
+    }, [])
+
     return (
         <div className="card">
         <div className="card-content">
@@ -18,7 +32,11 @@ const EmployeeCard = props => {
                     onClick={() => props.history.push(`/employees/${props.employee.id}/edit`)}>
                     Edit
                      </button>
-                    <button type="button" onClick={() => props.deleteEmployee(props.employee.id)}>Fire Employee</button>
+                     {
+                        animals.length === 0 ? 
+                      <button type="button" onClick={() => props.deleteEmployee(props.employee.id)}>Fire Employee</button> : null
+                     
+                     }  
         </div>
         </div>
     )

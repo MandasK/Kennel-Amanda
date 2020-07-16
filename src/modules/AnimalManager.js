@@ -41,5 +41,9 @@ export default {
             const randomAnimal = animals[randomIndex];
             return randomAnimal.id;
         });
-      }  
+      },
+      getAnimalEmployee(id) {
+        return fetch(`${remoteURL}/animals?employeeId=${id}`)
+        .then(result => result.json())
+      }
 }

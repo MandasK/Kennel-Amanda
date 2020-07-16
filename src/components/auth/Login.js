@@ -17,17 +17,17 @@ const Login = props => {
         the customer enters into session storage.
         ...Let's just trust the user... That's a good idea, right????
     */
+   
    if(useState.rememberMe !== "on") {
-    sessionStorage.setItem(
-      "credentials",
-      JSON.stringify(credentials)
-    );
+    props.setUser(credentials);
+
     props.history.push("/");
    } else {
    localStorage.setItem(
         "credentials",
         JSON.stringify(credentials)
     )
+    props.setUser(true)
     props.history.push("/");
   }
 }
